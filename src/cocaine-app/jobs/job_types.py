@@ -10,6 +10,7 @@ class JobTypes(object):
     TYPE_TTL_CLEANUP_JOB = 'ttl_cleanup_job'
     TYPE_BACKEND_CLEANUP_JOB = 'backend_cleanup_job'
     TYPE_BACKEND_MANAGER_JOB = 'backend_manager_job'
+    TYPE_RESTORE_LRC_GROUP_JOB = 'restore_lrc_group_job'
 
     AVAILABLE_TYPES = (
         TYPE_MOVE_JOB,
@@ -19,6 +20,7 @@ class JobTypes(object):
         TYPE_MAKE_LRC_GROUPS_JOB,
         TYPE_BACKEND_CLEANUP_JOB,
         TYPE_BACKEND_MANAGER_JOB,
+        TYPE_RESTORE_LRC_GROUP_JOB
     )
 
 
@@ -41,3 +43,4 @@ class TaskTypes(object):
     TYPE_EXTERNAL_STORAGE_DATA_SIZE = 'external_storage_data_size'
     TYPE_WRITE_EXTERNAL_STORAGE_MAPPING = 'write_external_storage_mapping'
     TYPE_CHANGE_COUPLE_SETTINGS = 'change_couple_settings'
+    TYPE_LRC_RECOVERY_TASK = 'lrc_recovery'

@@ -21,6 +21,7 @@ from external_storage import ExternalStorageTask
 from external_storage_data_size import ExternalStorageDataSizeTask
 from write_external_storage_mapping import WriteExternalStorageMappingTask
 from change_couple_settings import ChangeCoupleSettingsTask
+from lrc_recovery import LrcRecoveryTask
 
 
 class TaskFactory(object):
@@ -43,6 +44,7 @@ class TaskFactory(object):
         TaskTypes.TYPE_EXTERNAL_STORAGE_DATA_SIZE: ExternalStorageDataSizeTask,
         TaskTypes.TYPE_WRITE_EXTERNAL_STORAGE_MAPPING: WriteExternalStorageMappingTask,
         TaskTypes.TYPE_CHANGE_COUPLE_SETTINGS: ChangeCoupleSettingsTask,
+        TaskTypes.TYPE_LRC_RECOVERY_TASK: LrcRecoveryTask,
     }
 
     @staticmethod
