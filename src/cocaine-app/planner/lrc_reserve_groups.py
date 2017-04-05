@@ -770,7 +770,7 @@ class LrcReserveGroupSelector(object):
 
         else:
             raise RuntimeError(
-                'Failed to find any lrc reserve group to restore uncoupled lrc group {}'.format(group.group_id)
+                'Failed to find any lrc reserve group to restore uncoupled lrc group {}'.format(group_id)
             )
 
         return job
